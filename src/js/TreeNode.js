@@ -222,12 +222,13 @@ class TreeNode extends React.PureComponent {
             treeId,
             value,
             onClick,
+            className
         } = this.props;
         const clickable = onClick !== null;
         const inputId = `${treeId}-${String(value).split(' ').join('_')}`;
 
         const render = [(
-            <label key={0} htmlFor={inputId} title={title}>
+            <label key={0} htmlFor={inputId} title={title} className={className}>>
                 <NativeCheckbox
                     checked={checked === 1}
                     disabled={disabled}
