@@ -228,7 +228,7 @@ class TreeNode extends React.PureComponent {
         const inputId = `${treeId}-${String(value).split(' ').join('_')}`;
 
         const render = [(
-            <label key={0} htmlFor={inputId} title={title} className={className}>>
+            <label key={0} htmlFor={inputId} title={title} className={className}>
                 <NativeCheckbox
                     checked={checked === 1}
                     disabled={disabled}
